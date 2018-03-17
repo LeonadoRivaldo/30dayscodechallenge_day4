@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Calorie calculator in vanila js</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="./main.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="row" style="margin-top:50px;">
+            <div class="col-xs-12 col-sm">
+                <div class="card bg-light">
+                    <div class="card-header">
+                        <h5 class="card-title"> Calculator</h5>
+                    </div>
+                    <div class="card-body">
+                        <form name="caloriecounter">
+                            <div class="form-group">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="sex" id="male" value="m">
+                                    <label class="form-check-label" for="male">Male</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="sex" id="women" value="f">
+                                    <label class="form-check-label" for="women">Female</label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="age">Age: </label>
+                                <input class="form-control" type="number" name="age" id="age" />
+                            </div>
+                            <div class="form-group">
+                                <label for="height">Height: </label>
+                                <input class="form-control" type="number" name="height" id="height" />
+                            </div>
+                            <div class="form-group">
+                                <label for="weight">Weight: </label>
+                                <input class="form-control" type="number" name="weight" id="weight" />
+                            </div>
+                            <div class="form-group">
+                                <label for="af" style="text-transform:lowercase;">FACTOR OF PHYSICAL ACTIVITY: </label>
+                                <input class="form-control" type="number" name="af" id="af" />
+                                <small>Levels: 1 = none |  2 = low | 3 = high | 4 = very high</small>
+                            </div>
+                            <div class="d-flex justify-content-end" style="margin-top:10px;">
+                                <button class="btn btn-info border-info resete" style="margin-right:10px;">Resete</button>
+                                <button class="btn btn-success border-info calcular" >Calcular</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm esquerda">
+                <div class="card bg-light border-info">
+                    <div class="card-body text-info">
+                        <h5 class="card-title">Result</h5>
+                        <p title="It is the average number of calories required to maintain current weight taking into account the level of physical activity in healthy people." class="card-text eer">Estimated Daily Energy Requirement: </p>
+                        <p title="For people who are overweight (overweight and obese), the energy needed to maintain weight is called total energy expenditure (TEE) and not (EER) because maintaining excess weight is not recommended." class="card-text tee">Total Energy Expenditure: </p>
+                        <p title="Metabolic base estimated energy" class="card-text bee">Metabolic base estimated energy: </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="./main.js"></script>
+
+<script type="text/javascript">
+
+</script>
+
+</html>
